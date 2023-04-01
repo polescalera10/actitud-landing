@@ -7,11 +7,12 @@ function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
             <a href="#" title="" className="flex">
-              <img
+              {/* <img
                 className="w-auto h-8"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/logo.svg"
                 alt=""
-              />
+              /> */}
+              Logo
             </a>
           </div>
 
@@ -58,7 +59,7 @@ function Navbar() {
               title=""
               className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
             >
-              Features
+              Conóceme
             </a>
 
             <a
@@ -66,7 +67,7 @@ function Navbar() {
               title=""
               className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
             >
-              Solutions
+              Servicios
             </a>
 
             <a
@@ -74,7 +75,7 @@ function Navbar() {
               title=""
               className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
             >
-              Resources
+              Blog
             </a>
 
             <a
@@ -82,26 +83,26 @@ function Navbar() {
               title=""
               className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
             >
-              Pricing
+              Biblioteca
             </a>
 
             <div className="w-px h-5 bg-black/20"></div>
 
-            <a
+            {/* <a
               href="#"
               title=""
               className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
             >
-              Log in
-            </a>
+              Pide una cita
+            </a> */}
 
             <a
               href="#"
               title=""
-              className="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
+              className="rounded-full inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
               role="button"
             >
-              Try for free
+              Pide una cita
             </a>
           </div>
         </div>

@@ -7,32 +7,33 @@ function Hero() {
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
             <h1 className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
-              Collaborate remotely, with
+              Cambia tus hábitos,
               <div className="relative inline-flex">
-                <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-[#4ADE80]"></span>
+                <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-green-500"></span>
                 <h1 className="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
-                  Postcrafts.
+                  cambia tu vida
                 </h1>
               </div>
             </h1>
 
             <p className="mt-8 text-base text-black sm:text-xl">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat.
+              Te ayudo a lograr tus objetivos de salud y bienestar a través de
+              planes de alimentación adaptados a tus necesidades individuales.
+              Marca la diferencia en tu salud y estilo de vida. Comienza a dar
+              los primeros pasos hacia una nutrición saludable y sostenible.
             </p>
 
             <div className="mt-10 sm:flex sm:items-center sm:space-x-8">
               <a
                 href="#"
                 title=""
-                className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 hover:bg-orange-600 focus:bg-orange-600"
+                className="rounded-full inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-green-500 hover:bg-green-600 focus:bg-green-600"
                 role="button"
               >
-                Start exploring
+                Pide una cita
               </a>
 
-              <a
+              {/* <a
                 href="#"
                 title=""
                 className="inline-flex items-center mt-6 text-base font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80"
@@ -60,14 +61,14 @@ function Hero() {
                   />
                 </svg>
                 Watch video
-              </a>
+              </a> */}
             </div>
           </div>
 
           <div>
             <img
-              className="w-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/hero-img.png"
+              className="w-full rounded-xl shadow-xl"
+              src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               alt=""
             />
           </div>
