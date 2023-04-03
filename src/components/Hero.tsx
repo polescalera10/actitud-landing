@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -24,14 +26,11 @@ function Hero() {
             </p>
 
             <div className="mt-10 sm:flex sm:items-center sm:space-x-8">
-              <a
-                href="#"
-                title=""
-                className="rounded-full inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-green-500 hover:bg-green-600 focus:bg-green-600"
-                role="button"
-              >
-                Pide una cita
-              </a>
+              <Link href="/contacto" legacyBehavior>
+                <a className="rounded-full inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-green-500 hover:bg-green-600 focus:bg-green-600">
+                  Pide una cita
+                </a>
+              </Link>
 
               {/* <a
                 href="#"
@@ -65,11 +64,12 @@ function Hero() {
             </div>
           </div>
 
-          <div>
-            <img
-              className="w-full rounded-xl shadow-xl"
+          <div className="relative aspect-video w-full overflow-hidden ">
+            <Image
+              fill
+              className="rounded-xl shadow-xl object-cover"
               src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt=""
+              alt="nutricion cambio de habitos"
             />
           </div>
         </div>
