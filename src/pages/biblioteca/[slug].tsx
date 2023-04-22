@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
-function [slug]() {
-  return (
-    <div>[slug]</div>
-  )
+function bibliotecaPost() {
+  return <div>[slug]</div>;
 }
 
-export default [slug]
+export async function getStaticProps() {
+  return {
+    redirect: {
+      destination: "/",
+      permanent: false,
+    },
+  };
+}
+
+export default bibliotecaPost;

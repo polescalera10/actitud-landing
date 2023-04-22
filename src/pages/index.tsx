@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import Services from "@/components/Services";
+import LogoCloud from "@/components/LogoCloud";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       </Head>
       <Hero />
       <Features />
+      <Services />
+      <LogoCloud />
     </>
   );
 }
