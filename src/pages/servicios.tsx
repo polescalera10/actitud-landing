@@ -2,7 +2,7 @@ import Services from "@/components/Services";
 import Head from "next/head";
 import React from "react";
 
-function servicios() {
+function Servicios() {
   return (
     <>
       <Head>
@@ -13,4 +13,4 @@ function servicios() {
   );
 }
 
-export default servicios;
+export default Servicios;

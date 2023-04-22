@@ -1,16 +1,12 @@
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useEffect } from "react";
 
-function bibliotecaPost() {
+function BibliotecaPost() {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/");
+  }, []);
   return <div>[slug]</div>;
 }
 
-export async function getStaticProps() {
-  return {
-    redirect: {
-      destination: "/",
-      permanent: false,
-    },
-  };
-}
-
-export default bibliotecaPost;
+export default BibliotecaPost;

@@ -1,16 +1,12 @@
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useEffect } from "react";
 
-function blogPost() {
+function BlogPost() {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/");
+  }, []);
   return <div>[slug]</div>;
 }
 
-export async function getStaticProps() {
-  return {
-    redirect: {
-      destination: "/",
-      permanent: false,
-    },
-  };
-}
-
-export default blogPost;
+export default BlogPost;
