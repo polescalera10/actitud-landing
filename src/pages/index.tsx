@@ -22,31 +22,31 @@ export default function Home() {
   );
 }
 
-const url: string = process.env.HYGRAPH_URL || "";
+// const url: string = process.env.HYGRAPH_URL || "";
 
-// instantiating a graphql client...
-const graphConnect = new GraphQLClient(url);
+// // instantiating a graphql client...
+// const graphConnect = new GraphQLClient(url);
 
-const query = gql`
-  query Assets {
-    posts {
-      createdAt
-      excerpt
-      id
-      slug
-      content {
-        html
-      }
-      coverImage {
-        url
-      }
-    }
-  }
-`;
+// const query = gql`
+//   query Assets {
+//     posts {
+//       createdAt
+//       excerpt
+//       id
+//       slug
+//       content {
+//         html
+//       }
+//       coverImage {
+//         url
+//       }
+//     }
+//   }
+// `;
 
-export async function getServerSideProps() {
-  // making request to hygraph for posts
-  const { posts } = await graphConnect.request(query);
+// export async function getServerSideProps() {
+//   // making request to hygraph for posts
+//   const { posts } = await graphConnect.request(query);
 
-  return { props: { posts } };
-}
+//   return { props: { posts } };
+// }
