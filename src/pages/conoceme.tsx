@@ -13,7 +13,7 @@ function conoceme() {
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
               Guío a las personas hacia hábitos alimenticios{" "}
               <span className="relative inline-block">
-                <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-green-500"></span>
+                <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-actitud-default"></span>
                 <span className="relative"> saludables y equilibrados</span>
               </span>
             </h2>

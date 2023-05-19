@@ -21,7 +21,7 @@ function Footer() {
             </p>
             <ul className="flex items-center space-x-3 mt-9">
               {/* <li>
-                <a className="flex items-center justify-center cursor-pointer text-white transition-all duration-200 bg-green-800 rounded-full w-7 h-7 hover:bg-green-500 focus:bg-green-500">
+                <a className="flex items-center justify-center cursor-pointer text-white transition-all duration-200 bg-green-800 rounded-full w-7 h-7 hover:bg-actitud-default focus:bg-actitud-default">
                   <svg
                     className="w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ function Footer() {
               </li>
 
               <li>
-                <a className="flex items-center justify-center cursor-pointer text-white transition-all duration-200 bg-green-800 rounded-full w-7 h-7 hover:bg-green-500 focus:bg-green-500">
+                <a className="flex items-center justify-center cursor-pointer text-white transition-all duration-200 bg-green-800 rounded-full w-7 h-7 hover:bg-actitud-default focus:bg-actitud-default">
                   <svg
                     className="w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ function Footer() {
               </li> */}
 
               <li>
-                <a className="flex items-center justify-center cursor-pointer text-white transition-all duration-200 bg-green-800 rounded-full w-7 h-7 hover:bg-green-500 focus:bg-green-500">
+                <a className="flex items-center justify-center cursor-pointer text-white transition-all duration-200 bg-actitud-dark rounded-full w-7 h-7 hover:bg-actitud-default focus:bg-actitud-default">
                   <svg
                     className="w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ function Footer() {
               </li>
 
               {/* <li>
-                <a className="flex items-center justify-center cursor-pointer text-white transition-all duration-200 bg-green-800 rounded-full w-7 h-7 hover:bg-green-500 focus:bg-green-500">
+                <a className="flex items-center justify-center cursor-pointer text-white transition-all duration-200 bg-green-800 rounded-full w-7 h-7 hover:bg-actitud-default focus:bg-actitud-default">
                   <svg
                     className="w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ function Footer() {
             <ul className="mt-6 space-y-4">
               <li>
                 <Link legacyBehavior href="/conoceme">
-                  <a className="flex text-base text-black transition-all duration-200 hover:text-green-500 focus:text-green-500">
+                  <a className="flex text-base text-black transition-all duration-200 hover:text-actitud-default focus:text-actitud-default">
                     Conóceme
                   </a>
                 </Link>
@@ -96,7 +96,7 @@ function Footer() {
 
               <li>
                 <Link legacyBehavior href="/servicios">
-                  <a className="flex text-base text-black transition-all duration-200 hover:text-green-500 focus:text-green-500">
+                  <a className="flex text-base text-black transition-all duration-200 hover:text-actitud-default focus:text-actitud-default">
                     Servicios
                   </a>
                 </Link>
@@ -104,7 +104,7 @@ function Footer() {
 
               {/* <li>
                 <Link legacyBehavior href="/blog">
-                  <a className="flex text-base text-black transition-all duration-200 hover:text-green-500 focus:text-green-500">
+                  <a className="flex text-base text-black transition-all duration-200 hover:text-actitud-default focus:text-actitud-default">
                     Blog
                   </a>
                 </Link>
@@ -112,7 +112,7 @@ function Footer() {
 
               <li>
                 <Link legacyBehavior href="/biblioteca">
-                  <a className="flex text-base text-black transition-all duration-200 hover:text-green-500 focus:text-green-500">
+                  <a className="flex text-base text-black transition-all duration-200 hover:text-actitud-default focus:text-actitud-default">
                     Biblioteca
                   </a>
                 </Link>
@@ -128,14 +128,14 @@ function Footer() {
             <ul className="mt-6 space-y-4">
               <li>
                 <Link legacyBehavior href="/politica-privacidad">
-                  <a className="flex text-base text-black transition-all duration-200 hover:text-green-500 focus:text-green-500">
+                  <a className="flex text-base text-black transition-all duration-200 hover:text-actitud-default focus:text-actitud-default">
                     Política de privacidad
                   </a>
                 </Link>
               </li>
               <li>
                 <Link legacyBehavior href="/politica-cookies">
-                  <a className="flex text-base text-black transition-all duration-200 hover:text-green-500 focus:text-green-500">
+                  <a className="flex text-base text-black transition-all duration-200 hover:text-actitud-default focus:text-actitud-default">
                     Política de cookies
                   </a>
                 </Link>
@@ -158,13 +158,13 @@ function Footer() {
                   name="email"
                   id="email"
                   placeholder="Enter your email"
-                  className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-green-500 caret-green-500"
+                  className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-actitud-default caret-actitud-default"
                 />
               </div>
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-green-500 rounded-md hover:bg-blue-700 focus:bg-blue-700"
+                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-actitud-default rounded-md hover:bg-blue-700 focus:bg-blue-700"
               >
                 Subscribe
               </button>

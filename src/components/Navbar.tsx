@@ -5,8 +5,8 @@ export default function Navbar() {
   const navigation = [
     { text: "Conóceme", slug: "conoceme" },
     { text: "Servicios", slug: "servicios" },
-    // "Blog",
-    // "Biblioteca"
+    { text: "Blog", slug: "blog" },
+    { text: "Biblioteca", slug: "biblioteca" },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function Navbar() {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto rounded-md lg:hidden hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none"
+                  className="px-2 py-1 ml-auto rounded-md lg:hidden hover:text-actitud-default focus:text-actitud-default focus:bg-green-100 focus:outline-none"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -50,13 +50,13 @@ export default function Navbar() {
                   <>
                     {navigation.map((item, index) => (
                       <Link legacyBehavior key={index} href={`/${item.slug}`}>
-                        <a className="w-full px-4 py-2 -ml-4 text-base font-semibold text-black rounded-md hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none">
+                        <a className="w-full px-4 py-2 -ml-4 text-base font-semibold text-black rounded-md hover:text-actitud-default focus:text-actitud-default focus:bg-green-100 focus:outline-none">
                           {item.text}
                         </a>
                       </Link>
                     ))}
                     <Link legacyBehavior href="/contacto">
-                      <a className="rounded-full w-full inline-flex items-center justify-center py-2.5 text-base font-semibold text-black border-2 border-black hover:border-green-500 hover:bg-green-500 hover:text-white transition-all duration-200 focus:bg-black focus:text-white">
+                      <a className="rounded-full w-full inline-flex items-center justify-center py-2.5 text-base font-semibold text-black border-2 border-black hover:border-actitud-default hover:bg-actitud-default hover:text-white transition-all duration-200 focus:bg-black focus:text-white">
                         Pide una cita
                       </a>
                     </Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link legacyBehavior href={`/${menu.slug}`}>
-                  <a className="inline-block px-4 py-2 text-base font-semibold text-black no-underline rounded-md hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none">
+                  <a className="inline-block px-4 py-2 text-base font-semibold text-black no-underline rounded-md hover:text-actitud-default focus:text-actitud-default focus:bg-actitud-lighter focus:outline-none">
                     {menu.text}
                   </a>
                 </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link legacyBehavior href="/contacto">
-            <a className="rounded-full inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:border-green-500 hover:bg-green-500 hover:text-white transition-all duration-200 focus:bg-black focus:text-white">
+            <a className="rounded-full inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:border-actitud-default hover:bg-actitud-default hover:text-white transition-all duration-200 focus:bg-black focus:text-white">
               Pide una cita
             </a>
           </Link>

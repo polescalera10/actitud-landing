@@ -11,7 +11,7 @@ function Hero() {
             <h1 className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
               Cambia tus hábitos,
               <div className="relative inline-flex">
-                <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-green-500"></span>
+                <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-actitud-default"></span>
                 <h1 className="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
                   cambia tu vida
                 </h1>
@@ -27,7 +27,7 @@ function Hero() {
 
             <div className="mt-10 sm:flex sm:items-center sm:space-x-8">
               <Link href="/contacto" legacyBehavior>
-                <a className="rounded-full inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-green-500 hover:bg-green-600 focus:bg-green-600">
+                <a className="rounded-full inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-actitud-default hover:bg-actitud-dark focus:bg-actitud-dark">
                   Pide una cita
                 </a>
               </Link>

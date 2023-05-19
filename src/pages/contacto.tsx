@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import Head from "next/head";
 import React from "react";
 import { InlineWidget } from "react-calendly";
@@ -108,7 +109,7 @@ function contacto() {
               </div>
             </div>
 
-            <div className="lg:pl-12">
+            {/* <div className="lg:pl-12">
               <div className="overflow-hidden bg-white rounded-md">
                 <div className="p-6 sm:p-10">
                   <h3 className="text-3xl font-semibold text-black">
@@ -121,7 +122,7 @@ function contacto() {
                   <InlineWidget url="https://calendly.com/polescalera10/60min" />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="md:hidden">
               <div className="flex items-center">
@@ -195,6 +196,9 @@ function contacto() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center">
+            <ContactForm />
           </div>
         </div>
       </section>
