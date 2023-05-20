@@ -1,10 +1,10 @@
 import { GetServerSideProps } from "next";
 import React from "react";
-import { IPost } from "..";
 import Image from "next/image";
 import Head from "next/head";
 import { getPostbySlug } from "@/libs/queries";
 import { graphConnect } from "@/config/hygraph";
+import { IPost } from "@/libs/types";
 
 interface BlogPostProps {
   post: IPost;
