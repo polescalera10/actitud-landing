@@ -9,6 +9,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "cdn.rareblocks.xyz",
+      },
+      {
+        protocol: "https",
         hostname: "media.graphassets.com",
         port: "",
         pathname: "/**",

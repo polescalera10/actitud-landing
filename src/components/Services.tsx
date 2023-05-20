@@ -41,53 +41,51 @@ const servicesData = [
 
 function Services() {
   return (
-    <div className="py-4">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <Title />
-        {servicesData.map((service, key) => {
-          return (
-            <section key={`service-${key}`} className="body-font mb-8">
+    <div>
+      <Title />
+      {servicesData.map((service, key) => {
+        return (
+          <section key={`service-${key}`} className="body-font mb-8">
+            <div
+              className={`space-y-8 mx-auto flex ${
+                key % 2 ? "md:flex-row" : "md:flex-row-reverse"
+              } flex-col items-center`}
+            >
               <div
-                className={`container space-y-8 mx-auto flex px-5 py-4 ${
-                  key % 2 ? "md:flex-row" : "md:flex-row-reverse"
-                } flex-col items-center`}
+                className={`lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ${
+                  key % 2 ? "md:mr-8" : "md:ml-8"
+                }`}
               >
-                <div
-                  className={`lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ${
-                    key % 2 ? "md:mr-8" : "md:ml-8"
-                  }`}
-                >
-                  <img
-                    className="object-cover object-center rounded"
-                    alt="hero"
-                    src={service.image}
-                  />
-                </div>
-                <div className="space-y-6 lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
-                  <h3 className="title-font sm:text-4xl text-3xl mb-4 font-medium ">
-                    {service.title}
-                  </h3>
-                  {service.text.split(".").map((text, k) => (
-                    <p
-                      key={`service-${key}-${k}`}
-                      className="leading-relaxed text-lg"
-                    >
-                      {text}
-                    </p>
-                  ))}
-                  <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-                    <Link legacyBehavior href="/contacto">
-                      <a className="rounded-full inline-flex items-center justify-center px-5 py-2.5 text-lg font-semibold text-black border-2 border-black hover:border-actitud-default hover:bg-actitud-default hover:text-white transition-all duration-200 focus:bg-black focus:text-white">
-                        Pide una cita
-                      </a>
-                    </Link>
-                  </div>
+                <img
+                  className="object-cover object-center rounded"
+                  alt="hero"
+                  src={service.image}
+                />
+              </div>
+              <div className="space-y-6 lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+                <h3 className="title-font sm:text-4xl text-3xl mb-4 font-medium ">
+                  {service.title}
+                </h3>
+                {service.text.split(".").map((text, k) => (
+                  <p
+                    key={`service-${key}-${k}`}
+                    className="leading-relaxed text-lg"
+                  >
+                    {text}
+                  </p>
+                ))}
+                <div className="hidden mr-3 space-x-4 lg:flex nav__item">
+                  <Link legacyBehavior href="/contacto">
+                    <a className="rounded-full inline-flex items-center justify-center px-5 py-2.5 text-lg font-semibold text-black border-2 border-black hover:border-actitud-default hover:bg-actitud-default hover:text-white transition-all duration-200 focus:bg-black focus:text-white">
+                      Pide una cita
+                    </a>
+                  </Link>
                 </div>
               </div>
-            </section>
-          );
-        })}
-      </div>
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }

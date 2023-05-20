@@ -3,9 +3,17 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Services from "@/components/Services";
 import LogoCloud from "@/components/LogoCloud";
-import { GraphQLClient, gql } from "graphql-request";
+import Blog from "@/components/Blog";
+import { GetServerSideProps } from "next";
+import { IPost } from "@/libs/types";
+import { getHomePosts } from "@/libs/queries";
+import { graphConnect } from "@/config/hygraph";
 
-export default function Home() {
+interface HomeProps {
+  posts: IPost[];
+}
+
+const Home = ({ posts }: HomeProps) => {
   return (
     <>
       <Head>
@@ -17,36 +25,17 @@ export default function Home() {
       <Hero />
       <Features />
       <Services />
+      <Blog items={posts} />
       <LogoCloud />
     </>
   );
-}
+};
 
-// const url: string = process.env.HYGRAPH_URL || "";
+export default Home;
 
-// // instantiating a graphql client...
-// const graphConnect = new GraphQLClient(url);
+export const getServerSideProps: GetServerSideProps = async () => {
+  const data: { posts: IPost[] } = await graphConnect.request(getHomePosts);
+  const posts = data.posts;
 
-// const query = gql`
-//   query Assets {
-//     posts {
-//       createdAt
-//       excerpt
-//       id
-//       slug
-//       content {
-//         html
-//       }
-//       coverImage {
-//         url
-//       }
-//     }
-//   }
-// `;
-
-// export async function getServerSideProps() {
-//   // making request to hygraph for posts
-//   const { posts } = await graphConnect.request(query);
-
-//   return { props: { posts } };
-// }
+  return { props: { posts } };
+};
